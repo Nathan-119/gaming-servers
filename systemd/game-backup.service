@@ -1,0 +1,6 @@
+[Unit]
+Description=Game Backup Job
+
+[Service]
+Type=oneshot
+ExecStart=/srv/scripts/backup-game.sh

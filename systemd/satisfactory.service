@@ -1,0 +1,16 @@
+[Unit]
+Description=Satisfactory Dedicated Server
+After=network.target
+
+[Service]
+Type=simple
+User=nathan
+WorkingDirectory=/srv/satisfactory
+
+ExecStart=/srv/satisfactory/FactoryServer.sh
+
+Restart=on-failure
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target

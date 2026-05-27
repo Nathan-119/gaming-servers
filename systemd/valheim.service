@@ -1,0 +1,18 @@
+[Unit]
+Description=Valheim Dedicated Server
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+User=nathan
+Group=steam-admin
+WorkingDirectory=/srv/scripts
+
+ExecStart=/bin/bash /srv/scripts/start_valheim.sh
+
+Restart=on-failure:
+RestartSec=10
+LimitNOFILE=10000
+
+[Install]
+WantedBy=multi-user.target

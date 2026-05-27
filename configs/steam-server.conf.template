@@ -1,0 +1,23 @@
+# Game identifier (used for naming dirs, services, backups)
+GAME=""
+
+# Steam AppID for the dedicated server
+APPID=""
+
+# Installation directory for the server files
+INSTALL_DIR="/srv/${GAME}"
+
+# systemd service name
+SERVICE="${GAME}"
+
+# Steam user account used to install/run the server
+STEAM_USER="steam"
+
+# Path to game save/world data (game-specific, must be set per game)
+BACKUP_PATH=""
+
+# Backup destination (centralised storage)
+BACKUP_DEST="/mnt/backups/${GAME}"
+
+# Backup retention in days
+RETENTION_DAYS="30"

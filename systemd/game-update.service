@@ -1,0 +1,7 @@
+[Unit]
+Description=Game Update Orchestrator
+
+[Service]
+Type=oneshot
+User=root
+ExecStart=/srv/scripts/game-update.sh
