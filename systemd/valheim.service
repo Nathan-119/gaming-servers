@@ -10,7 +10,7 @@ WorkingDirectory=/srv/scripts
 
 ExecStart=/bin/bash /srv/scripts/start_valheim.sh
 
-Restart=on-failure:
+Restart=on-failure
 RestartSec=10
 LimitNOFILE=10000
 
